@@ -24,7 +24,6 @@
 		0487974A2AB410D1003FEE8F /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797412AB410D1003FEE8F /* Forum.swift */; };
 		0487974B2AB410D1003FEE8F /* RealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797422AB410D1003FEE8F /* RealTime.swift */; };
 		0487974C2AB410D1003FEE8F /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797432AB410D1003FEE8F /* CameraManager.swift */; };
-		0487974D2AB410D1003FEE8F /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797442AB410D1003FEE8F /* Information.swift */; };
 		048797682AB41101003FEE8F /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797502AB41101003FEE8F /* ForgetPasswordView.swift */; };
 		048797692AB41101003FEE8F /* MyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797512AB41101003FEE8F /* MyDataView.swift */; };
 		0487976A2AB41101003FEE8F /* BMIiiiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797522AB41101003FEE8F /* BMIiiiView.swift */; };
@@ -40,11 +39,11 @@
 		048797742AB41101003FEE8F /* CapturedPreviewOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487975D2AB41101003FEE8F /* CapturedPreviewOverlay.swift */; };
 		048797752AB41101003FEE8F /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487975E2AB41101003FEE8F /* CustomVideoPlayer.swift */; };
 		048797762AB41101003FEE8F /* CameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0487975F2AB41101003FEE8F /* CameraContentView.swift */; };
-		048797772AB41101003FEE8F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797602AB41101003FEE8F /* SignInView.swift */; };
+		048797772AB41101003FEE8F /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797602AB41101003FEE8F /* SigninView.swift */; };
 		048797782AB41101003FEE8F /* HypertensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797612AB41101003FEE8F /* HypertensionView.swift */; };
 		048797792AB41101003FEE8F /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797622AB41101003FEE8F /* ForumView.swift */; };
 		0487977A2AB41101003FEE8F /* PostTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797632AB41101003FEE8F /* PostTextView.swift */; };
-		0487977B2AB41101003FEE8F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797642AB41101003FEE8F /* SignUpView.swift */; };
+		0487977B2AB41101003FEE8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797642AB41101003FEE8F /* LoginView.swift */; };
 		0487977C2AB41101003FEE8F /* HyperglycemiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797652AB41101003FEE8F /* HyperglycemiaView.swift */; };
 		0487977D2AB41101003FEE8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797662AB41101003FEE8F /* ContentView.swift */; };
 		0487977E2AB41101003FEE8F /* PostImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048797672AB41101003FEE8F /* PostImageView.swift */; };
@@ -59,7 +58,6 @@
 		0F5F04D32AB1AC2B00E84985 /* CYUTGP110IMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F04D22AB1AC2B00E84985 /* CYUTGP110IMETests.swift */; };
 		0F5F04DD2AB1AC2B00E84985 /* CYUTGP110IMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F04DC2AB1AC2B00E84985 /* CYUTGP110IMEUITests.swift */; };
 		0F5F04DF2AB1AC2B00E84985 /* CYUTGP110IMEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5F04DE2AB1AC2B00E84985 /* CYUTGP110IMEUITestsLaunchTests.swift */; };
-		0F937E6B2AB1BC6D007E20A7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F937E6A2AB1BC6D007E20A7 /* GoogleService-Info.plist */; };
 		0F937E6E2AB1BD0C007E20A7 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937E6D2AB1BD0C007E20A7 /* FirebaseAnalytics */; };
 		0F937E702AB1BD0C007E20A7 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937E6F2AB1BD0C007E20A7 /* FirebaseAnalyticsOnDeviceConversion */; };
 		0F937E722AB1BD0C007E20A7 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937E712AB1BD0C007E20A7 /* FirebaseAnalyticsSwift */; };
@@ -87,6 +85,7 @@
 		0F937E9E2AB1BD0C007E20A7 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937E9D2AB1BD0C007E20A7 /* FirebaseRemoteConfigSwift */; };
 		0F937EA02AB1BD0C007E20A7 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937E9F2AB1BD0C007E20A7 /* FirebaseStorage */; };
 		0F937EA22AB1BD0C007E20A7 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0F937EA12AB1BD0C007E20A7 /* FirebaseStorageCombine-Community */; };
+		0FB429C12AB429360007E4BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FB429C02AB429360007E4BA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +123,6 @@
 		048797412AB410D1003FEE8F /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		048797422AB410D1003FEE8F /* RealTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealTime.swift; sourceTree = "<group>"; };
 		048797432AB410D1003FEE8F /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
-		048797442AB410D1003FEE8F /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		048797502AB41101003FEE8F /* ForgetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
 		048797512AB41101003FEE8F /* MyDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDataView.swift; sourceTree = "<group>"; };
 		048797522AB41101003FEE8F /* BMIiiiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIiiiView.swift; sourceTree = "<group>"; };
@@ -140,11 +138,11 @@
 		0487975D2AB41101003FEE8F /* CapturedPreviewOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedPreviewOverlay.swift; sourceTree = "<group>"; };
 		0487975E2AB41101003FEE8F /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		0487975F2AB41101003FEE8F /* CameraContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraContentView.swift; sourceTree = "<group>"; };
-		048797602AB41101003FEE8F /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		048797602AB41101003FEE8F /* SigninView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		048797612AB41101003FEE8F /* HypertensionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HypertensionView.swift; sourceTree = "<group>"; };
 		048797622AB41101003FEE8F /* ForumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
 		048797632AB41101003FEE8F /* PostTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTextView.swift; sourceTree = "<group>"; };
-		048797642AB41101003FEE8F /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		048797642AB41101003FEE8F /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		048797652AB41101003FEE8F /* HyperglycemiaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperglycemiaView.swift; sourceTree = "<group>"; };
 		048797662AB41101003FEE8F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		048797672AB41101003FEE8F /* PostImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageView.swift; sourceTree = "<group>"; };
@@ -163,7 +161,7 @@
 		0F5F04D82AB1AC2B00E84985 /* CYUTGP110IMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYUTGP110IMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5F04DC2AB1AC2B00E84985 /* CYUTGP110IMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYUTGP110IMEUITests.swift; sourceTree = "<group>"; };
 		0F5F04DE2AB1AC2B00E84985 /* CYUTGP110IMEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYUTGP110IMEUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0F937E6A2AB1BC6D007E20A7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FB429C02AB429360007E4BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,7 +280,6 @@
 				048797412AB410D1003FEE8F /* Forum.swift */,
 				048797422AB410D1003FEE8F /* RealTime.swift */,
 				048797432AB410D1003FEE8F /* CameraManager.swift */,
-				048797442AB410D1003FEE8F /* Information.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,11 +289,11 @@
 			children = (
 				0487974F2AB41101003FEE8F /* not! */,
 				0487975A2AB41101003FEE8F /* Camera */,
-				048797602AB41101003FEE8F /* SignInView.swift */,
+				048797602AB41101003FEE8F /* SigninView.swift */,
 				048797612AB41101003FEE8F /* HypertensionView.swift */,
 				048797622AB41101003FEE8F /* ForumView.swift */,
 				048797632AB41101003FEE8F /* PostTextView.swift */,
-				048797642AB41101003FEE8F /* SignUpView.swift */,
+				048797642AB41101003FEE8F /* LoginView.swift */,
 				048797652AB41101003FEE8F /* HyperglycemiaView.swift */,
 				048797592AB41101003FEE8F /* HyperlipidemiaView.swift */,
 				048797662AB41101003FEE8F /* ContentView.swift */,
@@ -382,7 +379,7 @@
 		0F5F04BA2AB1AC2A00E84985 /* CYUTGP110IME */ = {
 			isa = PBXGroup;
 			children = (
-				0F937E6A2AB1BC6D007E20A7 /* GoogleService-Info.plist */,
+				0FB429C02AB429360007E4BA /* GoogleService-Info.plist */,
 				0F5F04BB2AB1AC2A00E84985 /* CYUTGP110IMEApp.swift */,
 				0F5F04C22AB1AC2A00E84985 /* COContentView.swift */,
 				0F5F04C62AB1AC2B00E84985 /* CYUTGP110IME.entitlements */,
@@ -555,9 +552,9 @@
 			files = (
 				0487972C2AB41083003FEE8F /* Preview Assets.xcassets in Resources */,
 				0487972A2AB41083003FEE8F /* Assets.xcassets in Resources */,
+				0FB429C12AB429360007E4BA /* GoogleService-Info.plist in Resources */,
 				0487972D2AB41083003FEE8F /* body.xcassets in Resources */,
 				0487972B2AB41083003FEE8F /* camera.xcassets in Resources */,
-				0F937E6B2AB1BC6D007E20A7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,12 +590,12 @@
 				048797362AB410A0003FEE8F /* String.swift in Sources */,
 				0487974C2AB410D1003FEE8F /* CameraManager.swift in Sources */,
 				0487977E2AB41101003FEE8F /* PostImageView.swift in Sources */,
-				048797772AB41101003FEE8F /* SignInView.swift in Sources */,
+				048797772AB41101003FEE8F /* SigninView.swift in Sources */,
 				048797452AB410D1003FEE8F /* StoRage.swift in Sources */,
 				048797682AB41101003FEE8F /* ForgetPasswordView.swift in Sources */,
 				048797792AB41101003FEE8F /* ForumView.swift in Sources */,
 				048797852AB411AB003FEE8F /* CameraManagerViewModel.swift in Sources */,
-				0487977B2AB41101003FEE8F /* SignUpView.swift in Sources */,
+				0487977B2AB41101003FEE8F /* LoginView.swift in Sources */,
 				0F5F04BC2AB1AC2A00E84985 /* CYUTGP110IMEApp.swift in Sources */,
 				0487977C2AB41101003FEE8F /* HyperglycemiaView.swift in Sources */,
 				0F5F04C32AB1AC2A00E84985 /* COContentView.swift in Sources */,
@@ -621,7 +618,6 @@
 				0487973A2AB410C4003FEE8F /* Recipe.swift in Sources */,
 				048797482AB410D1003FEE8F /* Persistence.swift in Sources */,
 				0487976B2AB41101003FEE8F /* FavoriteView.swift in Sources */,
-				0487974D2AB410D1003FEE8F /* Information.swift in Sources */,
 				048797872AB411AB003FEE8F /* InformationLabel.swift in Sources */,
 				048797692AB41101003FEE8F /* MyDataView.swift in Sources */,
 				048797462AB410D1003FEE8F /* FireStore.swift in Sources */,
@@ -785,6 +781,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = C;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = M;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -823,6 +821,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = C;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = M;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

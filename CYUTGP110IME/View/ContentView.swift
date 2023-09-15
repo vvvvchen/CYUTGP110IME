@@ -4,7 +4,7 @@
 //
 //  Created by 曾品瑞 on 2023/9/11.
 //
-
+//
 import SwiftUI
 
 struct ContentView: View {
@@ -18,7 +18,7 @@ struct ContentView: View {
                 ForumView().transition(.opacity)
             //未登入
             } else {
-                SignInView().transition(.opacity)
+                LoginView().transition(.opacity)
             }
         }
         .ignoresSafeArea(.all)

@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-func overlayRectangleWithText() -> some View {
+func overlayRectangleWithText() -> some View
+{
     return
     ZStack
     {

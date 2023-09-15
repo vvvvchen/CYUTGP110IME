@@ -116,7 +116,8 @@ struct HypertensionView: View
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .keyboardType(.numberPad)
                             .frame(width: 330)
-                            .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)) {
+                            .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification))
+                        {
                                 _ in
                             }
                             .onChange(of: hypertension)

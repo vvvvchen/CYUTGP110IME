@@ -9,18 +9,21 @@ import Foundation
 import FirebaseFirestore
 
 //Firebase Firestore
-struct FireStore {
+struct FireStore
+{
     //Firestore環境
     let firestore: Firestore
     
     //MARK: 初始化
-    init() {
+    init()
+    {
         self.firestore=Firestore.firestore()
     }
     
     //MARK: 刪除
     //刪除Firestore中指定節點的所有資料
-    func deleteData(id: String) {
+    func deleteData(id: String)
+    {
         self.firestore
             //Forum節點
             .collection("Forum")
@@ -31,16 +34,19 @@ struct FireStore {
     }
     //MARK: 查詢
     //查詢Firestore中指定節點的所有資料
-    func getData(completion: @escaping (QuerySnapshot?, Error?) -> Void) {
+    func getData(completion: @escaping (QuerySnapshot?, Error?) -> Void)
+    {
         self.firestore
             //Forum節點
             .collection("Forum")
             //該節點的所有資料
             .getDocuments {(result, error) in
-                if let error=error {
+                if let error=error
+                {
                     //查詢錯誤 -> (空值, 錯誤資訊)
                     completion(nil, error)
-                } else {
+                } else
+                {
                     //查詢成功 -> (查詢結果, 空值)
                     completion(result, nil)
                 }
@@ -48,7 +54,8 @@ struct FireStore {
     }
     //MARK: 寫入
     //將資料寫入Firestore
-    func setData(id: String, title: String, text: String, secure: Bool, author: String, completion: @escaping (Bool, Error?) -> Void) {
+    func setData(id: String, title: String, text: String, secure: Bool, author: String, completion: @escaping (Bool, Error?) -> Void)
+    {
         self.firestore
             //創建或寫入Forum節點
             .collection("Forum")

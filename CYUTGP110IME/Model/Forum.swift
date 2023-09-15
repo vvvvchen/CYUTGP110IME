@@ -8,7 +8,8 @@
 import Foundation
 
 //論壇結構
-struct Forum: Hashable {
+struct Forum: Hashable
+{
     //ID
     let id: String
     //標題

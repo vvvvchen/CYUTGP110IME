@@ -8,13 +8,16 @@
 import SwiftUI
 import PhotosUI
 
-extension UIApplication {
-    func dismissKeyboard() {
+extension UIApplication
+{
+    func dismissKeyboard()
+    {
         sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
-struct PostTextView: View {
+struct PostTextView: View
+{
     @Environment(\.dismiss) private var dismiss
     
     @EnvironmentObject private var user: User
@@ -25,23 +28,30 @@ struct PostTextView: View {
     @State private var item: PhotosPickerItem?
     @State private var data: Data?
     
-    private func postForum() async {
-        if(self.forum.1.isEmpty || self.forum.2.isEmpty) {
+    private func postForum() async
+    {
+        if(self.forum.1.isEmpty || self.forum.2.isEmpty)
+        {
             self.result.1="Please ensure title and text isn't empty."
             self.result.0.toggle()
-        } else {
+        } else
+        {
             let id: String=UUID().uuidString
             
             if let data=self.data,
-               let image=UIImage(data: data) {
+               let image=UIImage(data: data)
+            {
                 StoRage().uploadPicture(path: "forum", name: id, image: image)
             }
             FireStore()
-                .setData(id: id, title: self.forum.1, text: self.forum.2, secure: self.forum.3, author: self.user.name) {(_, error) in
-                if let error=error {
+                .setData(id: id, title: self.forum.1, text: self.forum.2, secure: self.forum.3, author: self.user.name)
+            {(_, error) in
+                if let error=error
+                {
                     self.result.1=error.localizedDescription
                     self.result.0.toggle()
-                } else {
+                } else
+                {
                     self.result.1="Post success!"
                     self.result.0.toggle()
                 }
@@ -49,9 +59,12 @@ struct PostTextView: View {
         }
     }
     
-    var body: some View {
-        VStack(spacing: 20) {
-            VStack(spacing: 5) {
+    var body: some View
+    {
+        VStack(spacing: 20)
+        {
+            VStack(spacing: 5)
+            {
                 TextField("Title", text: self.$forum.1)
                     .bold()
                     .font(.largeTitle)
@@ -59,7 +72,8 @@ struct PostTextView: View {
                 Rectangle().frame(height: 1)
             }
             
-            VStack(spacing: 5) {
+            VStack(spacing: 5)
+            {
                 HStack {
                     Text("Text")
                         .bold()
@@ -67,7 +81,8 @@ struct PostTextView: View {
                     
                     Spacer()
                     
-                    Button("Add picture") {
+                    Button("Add picture")
+                    {
                         UIApplication.shared.dismissKeyboard()
                         self.showPicture.toggle()
                     }
@@ -81,15 +96,19 @@ struct PostTextView: View {
             }
         }
         .padding()
-        .sheet(isPresented: self.$showPicture) {
+        .sheet(isPresented: self.$showPicture)
+        {
             PostImageView(item: self.$item, data: self.$data)
                 .presentationBackground(.black.gradient)
                 .presentationDetents([.medium])
         }
-        .alert(self.result.1, isPresented: self.$result.0) {
+        .alert(self.result.1, isPresented: self.$result.0)
+        {
             Button("Dismiss", role: .cancel) {
-                if(self.result.1.contains("success")) {
-                    withAnimation(.easeInOut) {
+                if(self.result.1.contains("success"))
+                {
+                    withAnimation(.easeInOut)
+                    {
                         self.forum=("", "", "", false)
                     }
                     self.dismiss()
@@ -99,9 +118,11 @@ struct PostTextView: View {
         .navigationTitle("Post")
         .navigationBarTitleDisplayMode(.large)
         .toolbar {
-            ToolbarItem(placement: .principal) {
+            ToolbarItem(placement: .principal)
+            {
                 Button {
-                    withAnimation(.easeInOut) {
+                    withAnimation(.easeInOut)
+                    {
                         self.forum.3 = !self.forum.3
                     }
                 } label: {
@@ -109,7 +130,8 @@ struct PostTextView: View {
                 }
             }
             
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .navigationBarTrailing)
+            {
                 Button("Done") {
                     Task {
                         await self.postForum()
@@ -118,7 +140,8 @@ struct PostTextView: View {
                 .bold()
             }
             
-            ToolbarItem(placement: .keyboard) {
+            ToolbarItem(placement: .keyboard)
+            {
                 Button("Done") {
                     UIApplication.shared.dismissKeyboard()
                 }
