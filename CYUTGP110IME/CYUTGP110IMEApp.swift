@@ -13,7 +13,7 @@ struct CYUTGP110IMEApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            COContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

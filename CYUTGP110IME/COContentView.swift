@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct COContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -85,6 +85,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        COContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
