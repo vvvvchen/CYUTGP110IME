@@ -62,6 +62,13 @@ struct LoginView: View
     {
         NavigationStack
         {
+            //已登入
+            if(self.logIn) {
+                ForumView().transition(.opacity)
+            //未登入
+            } else {
+                LoginView().transition(.opacity)
+            }
                 VStack(spacing: 20)
                 {
                     //MARK: logo

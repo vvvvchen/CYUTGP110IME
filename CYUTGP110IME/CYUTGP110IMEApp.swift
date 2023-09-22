@@ -23,7 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 //MARK: Main App
 @main
-struct IM110App: App {
+struct CYUTGP110IMEApp: App {
     //提供所有View使用的User結構
     @EnvironmentObject var user: User
 
