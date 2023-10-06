@@ -58,7 +58,8 @@ struct ContentView: View {
                     Label("最愛", systemImage: "heart.fill")
                 }
                 
-                MyView(ContenSelect: self.$ContenSelect, information: self.$information)
+                MyView(ContenSelect: self.$ContenSelect)
+                     //  , information: self.$information)
                     .tag(4)
                     .tabItem
                 {
