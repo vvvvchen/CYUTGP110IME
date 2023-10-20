@@ -66,8 +66,8 @@ struct LoginView: View
             if(self.logIn) {
                 ForumView().transition(.opacity)
             //未登入
-            } else {
-                LoginView().transition(.opacity)
+//            } else {
+//                LoginView().transition(.opacity)
             }
                 VStack(spacing: 20)
                 {
